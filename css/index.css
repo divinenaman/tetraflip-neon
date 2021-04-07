@@ -66,14 +66,14 @@ h2 {
   height: 100%;
   background-color: rgb(253, 74, 29);
   clip-path: circle(25% at center);
-  transform: clip-path 0.5s ease-in-out;
+  transition: clip-path .25s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .discord:hover {
-  clip-path: circle(20% at center);
+  clip-path: circle(40%);
   background-color: rgb(201, 33, 33);
 }
 .discord img {
