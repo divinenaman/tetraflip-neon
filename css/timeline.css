@@ -1,0 +1,449 @@
+.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}
+
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}
+
+
+.timeline_2{
+    color: #fff;
+}
+
+.timeline_2 div{
+    font-size: 1vw;
+}
+
+.timeline_2 span{
+    font-size: 2vw;
+}
+.timeline_2 .ss-timeline {
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline_2 .ss-timeline .timeline-block {
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 120px
+}
+
+.timeline_2 .ss-timeline .timeline-block.first-block {
+    padding-bottom: 180px
+}
+
+.timeline_2 .ss-timeline .timeline-block.first-block>.timeline-planet-wrap {
+    top: -25px
+}
+
+.timeline_2 .ss-timeline .timeline-block:before {
+    display: block;
+    content: '';
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    z-index: 99;
+    background-image: url(dot.svg);
+    background-repeat: repeat-y;
+    background-size: 4px 12px
+}
+
+.timeline_2 .ss-timeline .timeline-block:last-child:before {
+    display: none;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-planet-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-planet-wrap .planet {
+    position: relative;
+    left: -webkit-calc(-50% + 2px);
+    left: calc(-50% + 2px);
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content {
+    position: relative;
+    width: 40%;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content.left {
+    text-align: right;
+    margin-left: 0;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content.left span {
+    text-align: left;
+    left: 150%;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content.right {
+    text-align: left;
+    margin-left: 60%;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content.right span {
+    text-align: right;
+    left: -150%;
+}
+
+.timeline_2 .ss-timeline .timeline-block .timeline-content span {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .ss-timeline .timeline-block:before {
+        left: 52px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .ss-timeline .timeline-block .timeline-planet-wrap {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .ss-timeline .timeline-block .timeline-planet-wrap .planet {
+        left: -webkit-calc(54px - 50%);
+        left: calc(54px - 50%);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .ss-timeline .timeline-block .timeline-content.left,
+    .timeline_2 .ss-timeline .timeline-block .timeline-content.right {
+        text-align: left;
+        margin-left: 120px;
+        width: -webkit-calc(100% - 120px);
+        width: calc(100% - 120px);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .ss-timeline .timeline-block .timeline-content span {
+        display: block;
+        left: 0!important;
+        text-align: left!important;
+        position: relative!important
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .timeline_2 .timeline-planet-wrap {
+        left: 0;
+    }
+}
+
+#sun-wrap {
+    width: 140px
+}
+
+#mercury-wrap {
+    width: 40px
+}
+
+#venus-wrap {
+    width: 60px
+}
+
+#earth-wrap {
+    width: 70px
+}
+
+#mars-wrap {
+    width: 80px
+}
+
+#jupiter-wrap {
+    width: 100px
+}
+
+#saturn-wrap {
+    width: 110px
+}
+
+#uranus-wrap {
+    width: 60px
+}
+
+#neptune-wrap {
+    width: 40px
+}
+
+.ss-timeline .timeline-block .timeline-planet-wrap .planet.dontanimate {
+    -webkit-animation: none!important;
+    animation: none!important
+}
+
+#earth-wrap>svg,
+#mercury-wrap>svg,
+#neptune-wrap>svg,
+#sun-wrap>svg {
+    -webkit-animation: planet-spin 15s infinite linear;
+    animation: planet-spin 15s infinite linear
+}
+
+@-webkit-keyframes planet-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes planet-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+#venus-line-01 {
+    -webkit-animation: venus-line-01-anim 3s linear infinite;
+    animation: venus-line-01-anim 3s linear infinite
+}
+
+@-webkit-keyframes venus-line-01-anim {
+    to {
+        stroke-dashoffset: 72%
+    }
+}
+
+@keyframes venus-line-01-anim {
+    to {
+        stroke-dashoffset: 72%
+    }
+}
+
+#venus-line-02 {
+    -webkit-animation: venus-line-02-anim 5s linear infinite;
+    animation: venus-line-02-anim 5s linear infinite
+}
+
+@-webkit-keyframes venus-line-02-anim {
+    to {
+        stroke-dashoffset: -102%
+    }
+}
+
+@keyframes venus-line-02-anim {
+    to {
+        stroke-dashoffset: -102%
+    }
+}
+
+#venus-line-03 {
+    -webkit-animation: venus-line-03-anim 4s linear infinite;
+    animation: venus-line-03-anim 4s linear infinite
+}
+
+@-webkit-keyframes venus-line-03-anim {
+    to {
+        stroke-dashoffset: -110%
+    }
+}
+
+@keyframes venus-line-03-anim {
+    to {
+        stroke-dashoffset: -110%
+    }
+}
+
+#saturn-ring {
+    stroke-dasharray: 40% 10%;
+    stroke-linecap: round;
+    -webkit-animation: saturn-ring-anim 3s linear infinite;
+    animation: saturn-ring-anim 3s linear infinite
+}
+
+@-webkit-keyframes saturn-ring-anim {
+    to {
+        stroke-dashoffset: 50%
+    }
+}
+
+@keyframes saturn-ring-anim {
+    to {
+        stroke-dashoffset: 50%
+    }
+}
+
+#mars-line-01,
+#mars-line-02,
+#mars-line-03,
+#mars-line-04,
+#mars-line-05 {
+    stroke-dasharray: 40% 7%;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    -webkit-animation: mars-lines-anim 5s linear infinite;
+    animation: mars-lines-anim 5s linear infinite
+}
+
+@-webkit-keyframes mars-lines-anim {
+    to {
+        stroke-dashoffset: 47%
+    }
+}
+
+@keyframes mars-lines-anim {
+    to {
+        stroke-dashoffset: 47%
+    }
+}
+
+#jupiter-line-01,
+#jupiter-line-02,
+#jupiter-line-03,
+#jupiter-line-04,
+#jupiter-line-05,
+#jupiter-line-06 {
+    -webkit-animation: jupiter-line-anim 3s linear infinite;
+    animation: jupiter-line-anim 3s linear infinite
+}
+
+@-webkit-keyframes jupiter-line-anim {
+    to {
+        stroke-dashoffset: 29
+    }
+}
+
+@keyframes jupiter-line-anim {
+    to {
+        stroke-dashoffset: 29
+    }
+}
+
+#uranus-line-06 {
+    -webkit-animation: uranus-line-06-anim 3s linear infinite;
+    animation: uranus-line-06-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-06-anim {
+    to {
+        stroke-dashoffset: 14
+    }
+}
+
+@keyframes uranus-line-06-anim {
+    to {
+        stroke-dashoffset: 14
+    }
+}
+
+#uranus-line-05 {
+    -webkit-animation: uranus-line-05-anim 3s linear infinite;
+    animation: uranus-line-05-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-05-anim {
+    to {
+        stroke-dashoffset: 31
+    }
+}
+
+@keyframes uranus-line-05-anim {
+    to {
+        stroke-dashoffset: 31
+    }
+}
+
+#uranus-line-04 {
+    -webkit-animation: uranus-line-04-anim 3s linear infinite;
+    animation: uranus-line-04-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-04-anim {
+    to {
+        stroke-dashoffset: -30
+    }
+}
+
+@keyframes uranus-line-04-anim {
+    to {
+        stroke-dashoffset: -30
+    }
+}
+
+#uranus-line-03 {
+    -webkit-animation: uranus-line-03-anim 3s linear infinite;
+    animation: uranus-line-03-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-03-anim {
+    to {
+        stroke-dashoffset: -30
+    }
+}
+
+@keyframes uranus-line-03-anim {
+    to {
+        stroke-dashoffset: -30
+    }
+}
+
+#uranus-line-02 {
+    -webkit-animation: uranus-line-02-anim 3s linear infinite;
+    animation: uranus-line-02-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-02-anim {
+    to {
+        stroke-dashoffset: -26
+    }
+}
+
+@keyframes uranus-line-02-anim {
+    to {
+        stroke-dashoffset: -26
+    }
+}
+
+#uranus-line-01 {
+    -webkit-animation: uranus-line-01-anim 3s linear infinite;
+    animation: uranus-line-01-anim 3s linear infinite
+}
+
+@-webkit-keyframes uranus-line-01-anim {
+    to {
+        stroke-dashoffset: 31
+    }
+}
+
+@keyframes uranus-line-01-anim {
+    to {
+        stroke-dashoffset: 31
+    }
+}
+
+.timeline-block:before {
+    -webkit-animation: dot-anim 1s linear infinite;
+    animation: dot-anim 1s linear infinite
+}
+
+@-webkit-keyframes dot-anim {
+    to {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px)
+    }
+}
+
+@keyframes dot-anim {
+    to {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px)
+    }
+}
+
+.ss-change-fill {
+    fill: #f7f5f9!important;
+    stroke: #f46c93!important
+}
+
+.ss-change-stroke {
+    stroke: #f46c93!important
+}
